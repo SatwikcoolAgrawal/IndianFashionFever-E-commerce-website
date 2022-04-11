@@ -62,14 +62,14 @@ button.normal {
 
 body {
     width: 100%;
-
 }
 
 
 /* navbar & header styling */
 
 #header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -379,6 +379,7 @@ body {
 }
 
 #sm-banner .banner-box {
+    border-radius: 4px;
     margin-top: 15px;
     background: url('img/banner/b17.jpg');
     background-size: cover;
@@ -435,6 +436,7 @@ button.white {
 
 
 #banner3 {
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -442,6 +444,7 @@ button.white {
 }
 
 #banner3 .banner-box {
+    border-radius: 4px;
     margin: 15px 0;
     background: url('img/banner/b7.jpg');
     background-position: center;
@@ -490,6 +493,7 @@ button.white {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 0;
 }
 
 #newsletter h4 {
@@ -540,6 +544,7 @@ button.white {
 /* footer styling */
 
 footer {
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -722,6 +727,20 @@ footer .copyright {
         width: 70%;
     }
 }
+
+
+@media (max-width : 640px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+}
+
+
 
 /* 2. for small device */
 
