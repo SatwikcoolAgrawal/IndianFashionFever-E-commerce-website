@@ -657,9 +657,15 @@ footer .copyright {
 
 
 /* single product styling */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
 #prodetails .single-pro-image {
-    width: 40%;
-    margin: 50px;
+    width: 30%;
+    margin: 80px 50px 50px 50px;
 
 }
 
@@ -671,6 +677,59 @@ footer .copyright {
 .small-img-group .small-img-col {
     flex-basis: 24%;
     cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    margin-top: 50px;
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h3 {
+    padding: 40px 0 20px 0;
+}
+
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+    padding: 20px 0 20px 0;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    background: #cce6e7;
+    border: 0;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 45px;
+    padding-left: 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #085f81;
+    color: #fff;
+}
+
+#prodetails .single-pro-details input:focus,
+#prodetails .single-pro-details select:focus {
+    outline: none;
+}
+
+
+#prodetails .single-pro-details p {
+    line-height: 25px;
+    text-align: justify;
 }
 
 /* responsiveness styling */
@@ -787,6 +846,24 @@ footer .copyright {
     #newsletter .newsform {
         width: 70%;
     }
+
+    /* for product page */
+
+
+    #prodetails .single-pro-image {
+        width: 50%;
+        margin-bottom: -50px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 50%;
+    }
+
+    #prodetails .single-pro-details p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
 }
 
 
@@ -890,5 +967,25 @@ footer .copyright {
 
     footer p {
         text-align: left;
+    }
+
+    /* for single product */
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-details p {
+        font-size: 16px;
     }
 }
