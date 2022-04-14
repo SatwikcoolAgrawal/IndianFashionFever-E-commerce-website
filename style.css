@@ -898,11 +898,11 @@ footer .copyright {
     /* for navbar */
 
     #header .logo {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     #toggler {
-        padding: 0 20px;
+        padding: 0;
     }
 
     #header {
