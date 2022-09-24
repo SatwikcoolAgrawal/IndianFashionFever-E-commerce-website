@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="shortcut icon" type="image" href="img/IFF.png">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -20,9 +21,9 @@
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Support</a></li>
+                <li><a href="contact.html" class="active">Support</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a id="close"><i class="fa fa-times"></i></a>
             </ul>
@@ -35,87 +36,50 @@
     </section>
 
     <!-- first section content -->
-    <section class="page-header blog-header">
-        <h2>#ReadMore</h2>
-        <p>Read about Latest Trends & Fashion !!</p>
+    <section class="page-header contact-header">
+        <h2>#ContactUs</h2>
+        <p>We Love to hear from our adoring customer,but feel free to fling tomatoes in our direction if you must</p>
     </section>
 
-    <section id="blog">
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b1.jpg" alt="">
+    <section id="support-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Vist one of our agency locations or contact us today</h2>
+            <div>
+                <li><i class="fas fa-map"></i>
+                    <p>MIG -2/457 XYZ Raipur</p>
+                </li>
+                <li><i class="fas fa-envelope"></i>
+                    <p>thefashion.fever@gmail.com</p>
+                </li>
+                <li><i class="fa fa-phone-alt"></i>
+                    <p>947342XXXXX</p>
+                </li>
+                <li><i class="fas fa-clock"></i>
+                    <p>Monday to Saturday : 9.00am to 8.00pm</p>
+                </li>
             </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente quaerat tempore totam illum
-                    officiis placeat corrupti earum expedita distinctio.</p>
-                <a href="#">CONTINUE READING</a>
-
-            </div>
-            <h1>13/01</h1>
         </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b7.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente quaerat tempore totam illum
-                    officiis placeat corrupti earum expedita distinctio.</p>
-                <a href="#">CONTINUE READING</a>
-
-            </div>
-            <h1>13/01</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b2.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente quaerat tempore totam illum
-                    officiis placeat corrupti earum expedita distinctio.</p>
-                <a href="#">CONTINUE READING</a>
-
-            </div>
-            <h1>27/01</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b3.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente quaerat tempore totam illum
-                    officiis placeat corrupti earum expedita distinctio.</p>
-                <a href="#">CONTINUE READING</a>
-
-            </div>
-            <h1>2/02</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b6.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente quaerat tempore totam illum
-                    officiis placeat corrupti earum expedita distinctio.</p>
-                <a href="#">CONTINUE READING</a>
-
-            </div>
-            <h1>15/02</h1>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14874.196353975682!2d81.59627432779578!3d21.249721974063796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dde213f66723%3A0x21543965c50c43c7!2sNational%20Institute%20of%20Technology(NIT)%2C%20Raipur!5e0!3m2!1sen!2sin!4v1663990835551!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
 
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#"><i class="fa fa-long-arrow-right"></i> </a>
+    <section id="form-details" class="section-p1">
+        <form id="query-form">
+            <span>LEAVE A MESSAGE <i class="fas fa-message"></i></span>
+            <h2>Love to hear from you</h2>
+            <input type="text" placeholder="Your Name" name="" id="name">
+            <input type="email" placeholder="Your Email" name="" id="email">
+            <input type="text" placeholder="Subject" name="" id="subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Query" id="query"></textarea>
+            <button>Submit</button>
+        </form>
     </section>
-
 
 
 
