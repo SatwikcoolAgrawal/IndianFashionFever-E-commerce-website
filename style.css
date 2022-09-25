@@ -813,7 +813,57 @@ footer .copyright {
     z-index: -9;
 }
 
+/* About page styling */
 
+#about-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-details div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-details div img {
+    width: 100%;
+    padding: 60px;
+
+}
+
+#about-details .about-txt {
+    text-align: justify;
+}
+
+#about-slider {
+    display: flex;
+    align-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+#about-slider .about-card {
+    width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 12px;
+    padding: 8px 25px;
+    text-align: justify;
+    background-color: #e3e6f398;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.1);
+
+}
+
+#about-slider .about-card:hover {
+    transform: scale(1.05);
+}
+
+#about-slider .about-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
 
 /* Support page styling */
 
@@ -854,6 +904,13 @@ footer .copyright {
     padding-right: 20px;
 }
 
+#form-details form i {
+    margin-left: 5px;
+    color: #085f81;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
 #support-details .details li p {
     margin: 0;
     font-size: 14px;
@@ -868,7 +925,6 @@ footer .copyright {
     height: 100%;
     width: 100%;
 }
-
 
 #form-details form {
     display: flex;
@@ -1041,6 +1097,24 @@ footer .copyright {
         line-height: normal;
     }
 
+    #about-details {
+        flex-direction: column;
+    }
+
+    #about-details div {
+        width: 100%;
+    }
+
+    #about-details .banner img {
+        padding: 5px;
+        margin-bottom: 25px;
+    }
+
+    #about-slider .about-card {
+        width: calc(48% - 20px);
+
+    }
+
 }
 
 
@@ -1180,6 +1254,7 @@ footer .copyright {
 
     #support-details .details {
         width: 100%;
+        margin-bottom: 25px;
     }
 
     #support-details .map {
@@ -1189,4 +1264,10 @@ footer .copyright {
     #form-details form {
         width: 100%;
     }
+
+    #about-slider .about-card {
+        width: calc(100% - 20px);
+
+    }
+
 }

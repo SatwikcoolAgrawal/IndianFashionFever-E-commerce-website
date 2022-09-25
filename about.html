@@ -9,40 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="shortcut icon" type="image" href="img/IFF.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script>
-        // sending email through contact form 
-        function sendEmail() {
-
-            var nm = document.getElementById("name").value;
-            var em = document.getElementById("email").value;
-
-            var subj = document.getElementById("subject").value;
-            var txt = document.getElementById("query").value;
-            var body = "Subject: " + subj + "<br><br>" + txt + "<br><br>name: " + nm + "<br>email: " + em;
-            console.log(body);
-            Email.send({
-                SecureToken: "03aa0893-10ea-4672-9584-b33ca0542468",
-                To: 'satwikagrawal2002@gmail.com',
-                From: "websitemailer002@gmail.com",
-                Subject: "message from " + nm,
-                Body: body
-            }).then(
-                message => {
-                    if (message == 'OK') {
-                        alert("Your Message Sent Successfully");
-                    }
-                    else {
-                        console.error(message);
-                        alert("There is error at sending message");
-                    }
-
-                }
-
-            );
-        }
-    </script>
 </head>
 
 <body>
@@ -70,51 +37,68 @@
 
     <!-- first section content -->
     <section class="page-header contact-header">
-        <h2>#ContactUs</h2>
-        <p>We Love to hear from our adoring customer,but feel free to fling tomatoes in our direction if you must</p>
+        <h2>#Know us</h2>
+        <p>We are maximisers</p>
     </section>
 
-    <section id="support-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Vist one of our agency locations or contact us today</h2>
-            <div>
-                <li><i class="fas fa-map"></i>
-                    <p>MIG -2/457 XYZ Raipur</p>
-                </li>
-                <li><i class="fas fa-envelope"></i>
-                    <p>thefashion.fever@gmail.com</p>
-                </li>
-                <li><i class="fa fa-phone-alt"></i>
-                    <p>947342XXXXX</p>
-                </li>
-                <li><i class="fas fa-clock"></i>
-                    <p>Monday to Saturday : 9.00am to 8.00pm</p>
-                </li>
-            </div>
+    <section id="about-details" class="section-p1">
+        <div class="banner">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/5d95d03767dd830006a295b6/GETTY/960x0.jpg?format=jpg&width=960"
+                alt="">
         </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14874.196353975682!2d81.59627432779578!3d21.249721974063796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dde213f66723%3A0x21543965c50c43c7!2sNational%20Institute%20of%20Technology(NIT)%2C%20Raipur!5e0!3m2!1sen!2sin!4v1663990835551!5m2!1sen!2sin"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="about-txt">
+            <h2>Who are We ??</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam culpa cumque hic aperiam sed magnam
+                dolore architecto nostrum omnis odit, nisi animi pariatur atque nam molestias necessitatibus impedit
+                repudiandae cum repellat at? Harum suscipit dignissimos sit reprehenderit eos sequi aut veritatis
+                placeat, autem id ex perferendis aperiam! Dolorum, similique suscipit. Eius ea, quidem quis sit unde at
+                quod, molestiae rem facilis delectus temporibus sunt incidunt debitis aspernatur. Quas, corporis iste
+                possimus accusamus laboriosam dignissimos, atque vel expedita, beatae quia facilis odit quis quaerat
+                architecto qui enim veniam consectetur eum porro. Minima officia vel necessitatibus eveniet. Suscipit
+                consectetur atque officiis commodi at veniam modi eligendi facere, asperiores cumque repellendus officia
+                quaerat architecto numquam. Dignissimos optio eaque excepturi. Reiciendis accusamus, tempore quaerat
+                quae suscipit odio? Nisi facilis pariatur cupiditate obcaecati ullam ipsam, facere eius voluptate nihil
+                voluptatibus. Corrupti quisquam alias voluptas similique enim debitis facilis, porro ea. Provident
+                dolorum omnis totam! Ullam?</p>
         </div>
     </section>
 
+    <section id="about-slider">
+        <div class="about-card">
+            <h3>our goals</h3>
+            <p>We're known more by the impact we create
+                than the titles we hold. Impact that is brought by
+                working together on audacious challenges at scale
+                with an aim to revolutionize for the Indian customer.
+                We believe great ideas can emerge from anywhere
+                and must be backed. Our people - backed by our
+                culture of end-to-end ownership - have revolutionised
+                India's e-commerce sector - several times over!</p>
+        </div>
+        <div class="about-card">
+            <h3>our Learning</h3>
+            <p>Our journey of building India's biggest unicorn
+                start-up has been full of successes, but also failures
+                and learning from them. That's why there's calculated
+                risk-taking, a high willingness to learn and improvise,
+                and a growth orientation built into everything we do.
+                Whether it be opening a new warehouse, or making
+                our mobile app a bit more consumer friendly, we're
+                always experimenting, learning and growing!</p>
+        </div>
+        <div class="about-card">
+            <h3>our Employees</h3>
+            <p>The best people make the best teams. And we put all
+                our efforts into finding the right people that fit into
+                our high-performing inclusive teams. Everyone has a
+                voice on the table and diversity of thoughts, styles
+                and actions is celebrated. From a category leader to a
+                wishmaster, we are all bound together and guided by
+                our values of audacity, bias for action, customer-first,
+                integrity and inclusion.</p>
+        </div>
 
-    <section id="form-details" class="section-p1">
-
-        <form onsubmit="sendEmail(); reset(); return false;" id="query-form">
-            <span>LEAVE A MESSAGE <i class="fas fa-message"></i></span>
-            <h2>Love to hear from you</h2>
-            <input type="text" placeholder="Your Name" name="name" id="name" required>
-            <input type="email" placeholder="Your Email" name="email" id="email" required>
-            <input type="text" placeholder="Subject" name="" id="subject" required>
-            <textarea name="" cols="30" rows="10" placeholder="Your Query" id="query" required></textarea>
-            <button>Submit</button>
-        </form>
     </section>
-
 
 
     <section id="newsletter" class="section-p1 section-m1">
